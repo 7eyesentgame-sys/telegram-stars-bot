@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const app = express();
 
 app.get("/pay", async (req, res) => {
-  const TOKEN = "8612014614:AAELQBe7_WY2g2-7-n3BMo1YSsp-4pykXx4";
+  const TOKEN = "ここにコード入力";
   const chat_id = req.query.id;
 
   await fetch(`https://api.telegram.org/bot${TOKEN}/sendInvoice`, {
